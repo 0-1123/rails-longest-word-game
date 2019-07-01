@@ -21,7 +21,9 @@
 <% end %>
 <% end %>
 
-<% if exist == false %>
+<% if word_array.length == 0 || word_array.length == 1 %>
+<p>This word does not exist!</p>
+<% elsif exist == false %>
 <p>This word does not exist!</p>
 <% elsif include == false%>
 <p>Your word is not made of the given letters!</p>
